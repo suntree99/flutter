@@ -1,4 +1,4 @@
-name: ft51_edh_hydrated_bloc_state_management
+name: ft52_edh_list_view_builder_n_bloc
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -28,8 +28,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
-  flutter_bloc: ^0.21.0
-  hydrated_bloc: ^0.4.1
+  flutter_bloc: ^0.20.1
 
 dev_dependencies:
   flutter_test:

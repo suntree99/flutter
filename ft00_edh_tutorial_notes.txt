@@ -1,0 +1,4 @@
+flutter_bloc: ^0.20.1
+provider: ^3.0.0+1
+flutter_bloc: ^0.21.0
+hydrated_bloc: ^0.4.1
