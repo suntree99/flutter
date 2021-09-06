@@ -4,6 +4,12 @@
 ```yaml
 shared_preferences: ^0.5.3+4
 ```
+
+## ft42_edh_provider_state_management
+```yaml
+provider: ^3.0.0+1
+```
+
 -
 -
 -
@@ -24,3 +30,5 @@ git push
 ```
 
 Untuk `menyoroti` bungkus text dengan backtick 1x
+
+Update README.md
