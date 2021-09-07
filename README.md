@@ -100,7 +100,14 @@ path_provider: ^1.3.1
 ```yaml
 
 ```
-
+http: ^0.12.0+2
+flutter_bloc: ^0.20.1
+provider: ^3.0.0+1
+flutter_bloc: ^0.21.0
+hydrated_bloc: ^0.4.1
+bloc: ^1.0.0
+flutter_bloc: ^1.0.0
+division: ^0.8.7+2
 -
 -
 -
