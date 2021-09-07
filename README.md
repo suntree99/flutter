@@ -59,7 +59,7 @@ http: ^0.12.0+2
 flutter_bloc: ^0.21.0
 ```
 ## ft55_edh_how_to_make_dart_snippet_to_code_faster
-Download file `dart.code-snippets` to `~\AppData\Roaming\Code\User\snippets`
+Download or copy file [dart.code-snippets](https://github.com/suntree99/flutter/blob/master/dart.code-snippets) and save in `~\AppData\Roaming\Code\User\snippets`
 
 ## ft57_edh_hive__database_in_pure_dart
 ```yaml
