@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: BlocProvider<ColorBloc>(
-          builder: (context) => ColorBloc(), child: MainPage()),
+        builder: (context) => ColorBloc(),
+        child: MainPage(),
+      ),
     );
   }
 }
@@ -39,7 +41,7 @@ class MainPage extends StatelessWidget {
         ],
       ),
       appBar: AppBar(
-        title: Text("Hydrated BLoC State Management"),
+        title: Text("BLoC dengan Flutter BLoC"),
       ),
       body: Center(
         child: BlocBuilder<ColorBloc, Color>(
@@ -47,7 +49,7 @@ class MainPage extends StatelessWidget {
             width: 100,
             height: 100,
             color: currentColor,
-            duration: Duration(microseconds: 500),
+            duration: Duration(milliseconds: 500),
           ),
         ),
       ),

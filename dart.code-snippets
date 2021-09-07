@@ -1,0 +1,122 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+
+	"Stateless Widget": {
+		"scope": "dart",
+		"prefix": "sl",
+		"body": [
+			"class MyApp extends StatelessWidget {",
+			"",
+				"\t@override",
+				"\tWidget build(BuildContext context) {",
+					"\t\treturn MaterialApp(",
+						"\t\t\thome: Scaffold(",
+							"\t\t\t\tappBar: AppBar(",
+								"\t\t\t\t\ttitle: Text(\"\"),",
+							"\t\t\t\t),",
+							"\t\t\t\tbody: Center(),",
+						"\t\t\t),",
+					"\t\t);",
+				"\t}",
+			"}",
+		],
+		"description": "Stateless Format"
+	},
+
+	"Stateful Widget": {
+		"scope": "dart",
+		"prefix": "sf",
+		"body": [
+			"class MyApp extends StatefulWidget {",
+				"\t@override",
+				"\t_MyAppState createState() => _MyAppState();",
+			"}",
+			"",
+			"class _MyAppState extends State<MyApp> {",
+				"\t@override",
+				"\tWidget build(BuildContext context) {",
+					"\t\treturn MaterialApp(",
+						"\t\t\thome: Scaffold(",
+							"\t\t\t\tappBar: AppBar(",
+								"\t\t\t\t\ttitle: Text(\"\"),",
+							"\t\t\t\t),",
+							"\t\t\t\tbody: Center(),",
+						"\t\t\t),",
+					"\t\t);",
+				"\t}",
+			"}",
+		],
+		"description": "Stateful Format"
+	},
+
+	"Stateless MyApp": {
+		"prefix": "stateless myapp",
+		"body": [
+			"class MyApp extends StatelessWidget {",
+				"\t@override",
+				"\tWidget build(BuildContext context) {",
+					"\t\treturn MaterialApp(",
+					"\t\tdebugShowCheckedModeBanner: false,",
+					"\t\thome: $0,",
+					"\t\t);",
+				"\t}",
+			"}"
+		]
+	},
+
+	"Stateless Page": {
+		"prefix": "stateless page",
+		"body": [
+			"class $1 extends StatelessWidget {",
+				"\t@override",
+				"\tWidget build(BuildContext context) {",
+					"\t\treturn Scaffold(",
+					"\t\tappBar: AppBar(title: Text(\"$2\"),),",
+					"\t\tbody: $0,",
+					"\t\t);",
+				"\t}",
+			"}",
+		]
+	},
+
+	"Stateful Page": {
+		"prefix": "stateful page",
+		"body": [
+			"class ${1:appName} extends StatefulWidget {",
+				"\t@override",
+				"\t_${1:appName}State createState() => _${1:appName}State();",
+			"}",
+			"",
+			"class _${1:appName}State extends State<${1:appName}> {",
+				"\t@override",
+				"\tWidget build(BuildContext context) {",
+					"\t\treturn Scaffold(",
+						"\t\t\tappBar: AppBar(title: Text(\"${2:title}\"),),",
+						"\t\t\tbody: $0,",
+					"\t\t);",
+				"\t}",
+			"}",
+		],
+	},
+
+	"Field Get Set" : {
+		"prefix": "fiels get set",
+		"body": [
+			"\t${1:fieldType} _${2:fieldName};",
+			"\t",
+			"\tvoid set${3:name}(${1:fieldType} value) {",
+				"\t\t_${2:fieldName} = value;",
+			"\t}",
+			"\t",
+			"\t${1:fieldType} get${3:name}() => _${2:fieldName};",
+		]
+	}
+
+}
+
